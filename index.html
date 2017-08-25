@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <script>
+	function scare(){
+
+       var audio = document.getElementById("scream");
+       audio.play();
+
+       var Gif = document.getElementById("chicken").style;
+       Gif.display= "inline";
+                 }
+        function scareEnd(){
+            var chicken = document.getElementById("chicken").style;
+            chicken.display = "none";
+                 }
+
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
+   </script>
+<style>
+.logo_div {display:none !important;visibility:hidden;}
+.uppermenu {display:none !important;visibility:hidden;}
+.fpix_header {display:none !important;visibility:hidden;}
+.fpix_header td {display:none !important;visibility:hidden;}
+.fpix_header.topad {display:none !important;visibility:hidden;}
+#fpix_wrapper{visibility:visible;}
+#show_chat_btn {display:none !important;visibility:hidden;}
+.profile_text {display:none !important;visibility:hidden;}
+#flash_close_butt {display:none !important;visibility:hidden;}
+#left_container {display:none !important;visibility:hidden;}
+#asltable {display:none !important;visibility:hidden;}
+#asltable td {display:none !important;visibility:hidden;}
+#asltable.fpix_asl_table {display:none !important;visibility:hidden;}
+#buyers_ad {display:none !important;visibility:hidden;}
+.bottombar {display:none !important;visibility:hidden;}
+body.desktop{padding:0px;}
+#header{position:fixed; width:100%; height:auto; left:0px; top:0px; background-color:rgba(0,0,0,0);  z-index:-5;}
+center{display:none;}
+#profile_builder{display:none;}
+#myname{position:absolute; float:left; left:50%; transform: translateX(-50%); height:70px; margin:70px auto 0 auto; z-index:5;}
+#pikarun{float:left;position:absolute; left:-20%; top:0 width:200px; z-index:0; -webkit-animation-name:example; -webkit-animation-duration:10s; -webkit-animation-iteration-count:infinite;}
+@-webkit-keyframes example{0%{left:-20%;}100%{left:120%;}} 
+#charizard{float:left;position:absolute; left:-20%; top:-50px; width:300px;z-index:-1; -webkit-animation-name:example; -webkit-animation-duration:10s; -webkit-animation-iteration-count:infinite;-webkit-animation-delay: -5s; animation-delay: -5s;}
+body{overflow-x:hidden;}
+@-webkit-keyframes LogoRotate {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+100% {
+    transform: rotate(-20deg);
+  }
+}
+#lowerbody{position:relative; left:50%; transform: translateX(-50%); width:80%; height:200%; color:auto; background-color:rgba(0,0,0,0.3); z-index:-10;}
+#bush1{position:absolute; float:left; width:30%; height:230px; top:-40px; left:-13%; z-index:2;}
+#bush2{position:absolute; float:right; width:30%; height:230px; top:-40px; right:-10%; z-index:2;}
+#soil{position:absolute; float:left; top:130px; width:125%; height:30px; left:-5%; z-index:1; max-width:auto\9;}
+#sky{position:absolute; float:left; top:0px; left:0px; z-index:-2;}
+#ManCity{width:20%; margin-top:200px; margin-left:10%;-webkit-animation: LogoRotate 1s infinite;}
+#ManCityText{margin-top:225px; margin-right: 10%; width:50%;
+ float:right;}
+#cuber{float:right;  width:25%; margin:20px 5% 0 0;}
+#cuberText{margin-top:30px; margin-left:10%; width:50%; padding-bottom:50px;}
+#dexter{width:20%;margin-left:15%; margin-top:-10px;}
+#dexterText{width:40%; float:right; padding-right:10%;}
+#music{width:20%; margin-left:10%;}
+#musicText{width:50%; float:left; margin:25px 0 10px 10%; }
+#quote{ width:90%; margin:100px 5% 5% 5%;}
+audio{visibility:hidden;}
+#chicken{display:none; position:fixed; left:0; top:25%; width:100%; height:auto;transform: translateY(-25%); z-index:500;}
+#redButton{height:100px;position:absolute; left:50%; padding-top:50px; transform: translateX(-50%); z-index:100; }
+#warning{position:absolute; left:50%; transform: translateX(-50%);width:25%; margin:170px 0 20px 0;}
+</style>
+</head>
+<body>
+<img style="position:fixed; height:100%; left:0px; top:0px;  z-index:-500; width:100%; padding-top:150px;" src="https://s21.postimg.org/lb4y8b713/clouds_1.jpg"/>
+<div id="header">
+<img id="myname" src="https://image.ibb.co/gCY6K5/6e7b47aab07032c6cb7ef9410234858b.png"/>
+<img id="pikarun" src="https://goo.gl/gQocaq"/>
+<img id="charizard" src="http://goo.gl/aFcDQM"/>
+<img id="bush1" src="https://image.ibb.co/fmJ6K5/bush_575513_960_720.png"/> 
+<img id="bush2" src="https://image.ibb.co/fmJ6K5/bush_575513_960_720.png"/>
+<img id="soil" src="https://goo.gl/Q967bl"/>
+<!--<img id="sky" src="http://goo.gl/7uu1F4"/>-->
+<div id="sky" style="background-color:#01a4c6; width:100%; height:150px;"></div>
+</div>
+
+<div id= "lowerbody">
+
+<p><img id="ManCity" src="https://goo.gl/N15WUw"/>
+<img id="ManCityText" src="https://image.ibb.co/iBXVwk/d8672a0df44805d55dbe9ffd2737e029.png"/></p>
+<p><img id="cuber" src="https://goo.gl/pprz6n"/>
+<img id="cuberText" src="https://image.ibb.co/iqwC95/2a4e5ed36f278541b52f1f88529960ec.png"/></p>
+<p><img id="dexter" src="http://goo.gl/oHVsJh"/>
+<img id="dexterText" src="https://image.ibb.co/jq3g2Q/33a59a45a96102ea0aa580784a374b88.png"/>
+</p>
+<p><img id="music" src="http://vignette2.wikia.nocookie.net/dotd/images/4/44/Lute_6.png"/>
+<img id="musicText" src="https://image.ibb.co/iamCRk/7db8b75bace80f3dd9141f4127906224.png"/>
+</p>
+<img id="quote" src="https://image.ibb.co/eupX95/48887e19a0974653976cfe44583b9e05.png"/>
+</div>
+<img id= "chicken" src ="https://image.ibb.co/kG4B2Q/gRXLxXd.gif"/>
+<div >
+   <img id="redButton" onclick="sleep(5000);scare();" src="http://www.freeiconspng.com/uploads/push-button-icon-png-2.png"/>
+   <img id="warning" src="https://image.ibb.co/cPf3z5/161dfdf0805273060bb6cb7842100e06.png"/>
+</div>
+
+<!--<script id="cid0020000134387831318" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 400px;height: 350px;">{"handle":"ronaldo7-net","arch":"js","styles":{"a":"0084ef","b":18,"c":"FFFFFF","d":"FFFFFF","f":18,"i":18,"k":"0084ef","l":"0084ef","m":"0084ef","n":"FFFFFF","o":18,"p":"10","q":"0084ef","r":18,"fwtickm":1}}</script>-->
+
+<!--<audio controls autoplay loop>
+<source src="https://ia800709.us.archive.org/32/items/U2-WithOrWithoutYou/U2-WhitOrWithoutYou.ogg" type="audio/ogg">
+
+<source src="https://ia800709.us.archive.org/32/items/U2-WithOrWithoutYou/U2-WhitOrWithoutYou.mp3" type="audio/mpeg">
+</audio>-->
+<audio loop id="scream" src="https://k003.kiwi6.com/hotlink/y7o8xflbsc/Maniacal_Witches_Laugh-SoundBible.com-262127569.mp3" ></audio>
+</body>
+</html>
